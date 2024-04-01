@@ -167,21 +167,135 @@ aside {
     width: 100%;
 }
 
-.fotoProductos img {
-    margin: 70px;
-    margin-left: 70px;
-    border-radius: 5px;
+/* todo lo siguiente es grid */
+.fotoProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    background-color: #F8F2DC;
+    padding: 20px;
+    gap: 15px;
 }
 
-.mainProductos a {
+.item {
+    border: solid #22223B 2px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.item1 {
+    background-image: url(../assets/productos/WhatsApp\ Image\ 2024-03-11\ at\ 17.53.02.jpeg);
+
+}
+
+.item2 {
+    background-image: url(../assets/productos/WhatsApp\ Image\ 2024-03-11\ at\ 17.53.06.jpeg);
+
+}
+
+.item3 {
+    background-image: url(../assets/productos/WhatsApp\ Image\ 2024-03-11\ at\ 18.01.41.jpeg);
+
+}
+
+.item4 {
+    background-image: url(../assets/productos/WhatsApp\ Image\ 2024-03-11\ at\ 18.01.42.jpeg);
+
+}
+
+.item5 {
+    background-image: url(../assets/productos/WhatsApp\ Image\ 2024-03-11\ at\ 18.01.43.jpeg);
+}
+
+.item6 {
+    background-image: url(../assets/productos/WhatsApp\ Image\ 2024-03-11\ at\ 18.01.43\ \(1\).jpeg);
+
+}
+
+.item7 {
+    background-image: url(../assets/bench-3504764_1280.jpg);
+}
+
+.item8 {
+    background-image: url(../assets/table-and-benches-856200_1280.jpg);
+}
+
+/* Inicio media querrys */
+
+@media only screen and (min-width:480px){
+    .fotoProductos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .fotoProductos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .item2{
+        grid-column: 3/4;
+    }
+
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .item4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+
+    }
+
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .item7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .item7{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .fotoProductos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 360px);
+        gap: 25px;
+    }
+}
+/* aqui termina grid */
+
+.algo {
+    width: 100%;
+    padding: 30px;
+}
+
+.mainProductos .algo .button {
     color: #F8F2DC;
     text-decoration: none;
     padding: 10px 30px;
     background-color:#313715;
     border-radius: 5px;
-    position: relative;
-    bottom: 30px;
-
 }
 
 /* Todo lo de abajo es de contacto */
