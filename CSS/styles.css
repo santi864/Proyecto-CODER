@@ -64,7 +64,7 @@ nav a:hover {
     height: 83.5vh;
     width: 100%;
     background-color:#F8F2DC;
-    background-image: url(/assets/forest-3082836_1920.jpg);
+    background-image: url(../assets/forest-3082836_1920.jpg);
     background-size: cover;
     background-position: left;
 }
@@ -187,7 +187,7 @@ aside {
 /* Todo lo de abajo es de contacto */
 
 .mainContacto {
-    background-image: url(/assets/wood-2045379_1920.jpg);
+    background-image: url(../assets/wood-2045379_1920.jpg);
     background-size: cover;
     background-color: #F8F2DC;
     height: 460px;
