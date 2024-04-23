@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Visual Studio Code"
+		},
+		{
+			"path": "../../git-hub"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CODER HOUSE"
+	}
+}
