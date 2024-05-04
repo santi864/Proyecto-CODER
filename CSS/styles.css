@@ -48,6 +48,11 @@ span {
   color: #D16014;
   font-weight: 500;
   font-size: 40px;
+  transition-duration: 1s;
+}
+
+.navbar-brand:hover {
+  font-size: 42px;
 }
 
 .navbar-toggler:focus, .btn-close:focus {
@@ -59,6 +64,11 @@ span {
   color: #D16014;
   font-weight: 500;
   font-size: 20px;
+  transition-duration: 0.5s;
+}
+
+.navbar-link:hover {
+  font-size: 26px;
 }
 
 .nav-link:hover {
@@ -124,13 +134,12 @@ span {
   text-decoration: none;
   padding: 10px 30px;
   background-color: #313715;
-  background-image: linear-gradient(to left, #313715, #313715, #D16014);
   border-radius: 5px;
-  transition: 1000ms;
+  transition-duration: 0.5s;
 }
 
 .call a:hover {
-  background-image: linear-gradient(to right, #313715, #313715, #D16014);
+  background-color: #D16014;
 }
 
 /* Todo lo de arriba es del main */
@@ -304,8 +313,8 @@ div .tituloContacto {
   color: #F8F2DC;
   width: 68%;
   float: left;
-  margin-top: 25vh;
-  margin-bottom: 50px;
+  margin-top: 22vh;
+  margin-bottom: 20px;
   margin-left: 50px;
   margin-right: 50px;
   font-size: 40px;
@@ -342,6 +351,11 @@ h5 {
 /* Todo lo de abajo es del footer */
 .list-inline-item a i {
   color: #D16014;
+  transition-duration: 0.25s;
+}
+
+.list-inline-item a i:hover {
+  color: #6c320b;
 }
 
 footer {
@@ -375,4 +389,62 @@ footer p {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
+  transition-duration: 0.25s;
+}
+
+.subir:hover {
+  background-color: #6c320b;
+}
+
+form {
+  max-width: 50vw;
+  float: left;
+  margin-bottom: 10vh;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.feedback-input {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 12px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #D16014;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #313715;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type=submit] {
+  width: 100%;
+  background: #D16014;
+  border-radius: 12px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type=submit]:hover {
+  background: #313715;
 }/*# sourceMappingURL=styles.css.map */
