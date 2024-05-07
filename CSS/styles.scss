@@ -370,8 +370,21 @@ div h3 {
 }
 
 /* Todo lo de abajo es de pagina tres */
+.mainNosotros {
+    background-image: url(../assets/wood-2045379_1920.jpg);
+    background-size: cover;
+    background-color: #F8F2DC;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 770px) {
+    .mainNosotros {
+        height: 140vh;
+    }
+}
+
 .tit {
-    padding-top: 20vh;
+    padding-top: 20vh;    
 }
 
 h5 {
